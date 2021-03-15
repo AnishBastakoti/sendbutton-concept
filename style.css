@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    background-color: #0d0101;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    grid-gap: 15px;
+    overflow: hidden;
+    padding: 10px;
+    transition: all 0.7s ease-in-out;
+}
+
+.respone {
+    width: 17vw;
+    height: 47vh;
+    border-radius: 15px;
+    transform: rotate(90deg);
+    box-shadow: 20px 6px 20px 2px red;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transform: rotate(-90deg);
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 5px 5px 8px 0px rgb(0 0 0);
+    z-index: 3;
+    transition: all 0.5s cubic-bezier(0.63, 0.18, 0.83, 0.67);
+}
+
+.move {
+    width: 40px;
+    top: 78%;
+    height: 40px;
+}
+
+span {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.one {
+    font-size: 40px;
+    font-weight: bolder;
+    top: 100%;
+    left: -150px;
+    transition: top 1s, left 1s, transform 0.4s ease 0.5s;
+}
+
+.one-move {
+    top: 50%;
+    left: 50%;
+    transition: top 1s, left 1s, transform 0.4s ease 0.5s;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.two {
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease;
+}
+
+.send {
+    top: 30%;
+    left: 130%;
+    transition: all 0.8s ease;
+}
+
+i {
+    font-weight: normal;
+    font-style: normal;
+    transform: translateY(4px);
+}
+.fa-instagram:hover{
+  color: #f48282;
+  transform: scale(1.5);
+}
+.fa-facebook-messenger:hover{
+  color: #006AFF;
+  transform: scale(1.5);
+}
+.fa-twitter:hover{
+  color: #00aced;
+  transform: scale(1.5);
+}
+.fa-reddit-alien:hover{
+  color: #ff4500;
+  transform: scale(1.5);
+}
+
+i:not(.fa-paper-plane) {
+    font-size: 32px;
+}
+
+.fa-paper-plane {
+    transform: rotate(360deg);
+}
+.items a{
+  color:#fff8f8;
+  text-decoration: none;
+  font-size: 33px;
+}
+
+.fas:hover:not(.fa-paper-plane) {
+    transition: transform 0.5s linear;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+}
+@media all and (orientation: landscape) {
+  .respone{
+    width: 8vw;
+    height: 86vh;
+  }
+}
